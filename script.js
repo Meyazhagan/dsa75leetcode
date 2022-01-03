@@ -10,8 +10,10 @@ tableData.forEach((data, index) => {
     rowCopy.querySelector("#name").textContent = data.Name;
     rowCopy.querySelector("#category").textContent = data.Category;
     rowCopy.querySelector("#note").textContent = data.Notes;
-    rowCopy.querySelector("#link").innerHTML = `<a href="${data.Link}">Ques</a>`;
-    rowCopy.querySelector("#video-link").innerHTML = `<a href="${data.VideoLink}">YT</a>`;
+    rowCopy.querySelector("#link").innerHTML = `<a href="${data.Link}" target="_blank">Ques</a>`;
+    rowCopy.querySelector(
+        "#video-link"
+    ).innerHTML = `<a href="${data.VideoLink}" target="_blank">YT</a>`;
 
     tableBody.append(rowCopy);
 });
