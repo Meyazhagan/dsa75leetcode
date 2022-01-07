@@ -62,7 +62,7 @@ function App() {
                                 </td>
                                 <td
                                     className="p-4 border-t-2 border-gray-300 text-justify w-[40ch] max-w-[45ch] hover:bg-gray-100"
-                                    onClick={() => toggleCompleted(entry._id)}
+                                 //   onClick={() => toggleCompleted(entry._id)}
                                     id="link">
                                     <a
                                         href={entry.Link}
