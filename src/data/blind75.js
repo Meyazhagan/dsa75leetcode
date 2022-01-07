@@ -1,530 +1,757 @@
-let tableData = [
+export default [
+    /* 1 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee90",
         VideoLink: "https://youtu.be/KLlXCFG5TnA",
         Category: "Arrays",
         Name: "Two Sum",
         Link: "https://leetcode.com/problems/two-sum/",
-        Notes: "use hash map to instantly check for difference value, map will add index of last occurrence of a num, don’t use same element twice;",
+        Notes: "use hash map to instantly check for difference value, map will add index of last occurrence of a num, don't use same element twice;",
     },
+
+    /* 2 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee91",
         VideoLink: "https://youtu.be/1pkOgXD63yU",
         Category: "Arrays",
         Name: "Best Time to Buy and Sell Stock",
         Link: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
         Notes: "find local min and search for local max, sliding window;",
     },
+
+    /* 3 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee92",
         VideoLink: "https://youtu.be/3OamzN90kPg",
         Category: "Arrays",
         Name: "Contains Duplicate",
         Link: "https://leetcode.com/problems/contains-duplicate/",
         Notes: "hashset to get unique values in array, to check for duplicates easily",
     },
+
+    /* 4 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee93",
         VideoLink: "https://youtu.be/bNvIQI2wAjk",
         Category: "Arrays",
         Name: "Product of Array Except Self",
         Link: "https://leetcode.com/problems/product-of-array-except-self/",
         Notes: "make two passes, first in-order, second in-reverse, to compute products",
     },
+
+    /* 5 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee94",
         VideoLink: "https://youtu.be/5WZl3MMT0Eg",
         Category: "Arrays",
         Name: "Maximum Subarray",
         Link: "https://leetcode.com/problems/maximum-subarray/",
         Notes: "pattern: prev subarray cant be negative, dynamic programming: compute max sum for each prefix",
     },
+
+    /* 6 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee95",
         VideoLink: "https://youtu.be/lXVy6YWFcRM",
         Category: "Arrays",
         Name: "Maximum Product Subarray",
         Link: "https://leetcode.com/problems/maximum-product-subarray/",
         Notes: "dp: compute max and max-abs-val for each prefix subarr;",
     },
+
+    /* 7 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee96",
         VideoLink: "https://youtu.be/nIVW4P8b1VA",
         Category: "Arrays",
         Name: "Find Minimum in Rotated Sorted Array",
         Link: "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
         Notes: "check if half of array is sorted in order to find pivot, arr is guaranteed to be in at most two sorted subarrays",
     },
+
+    /* 8 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee97",
         VideoLink: "https://youtu.be/U8XENwh8Oy8",
         Category: "Arrays",
         Name: "Search in Rotated Sorted Array",
         Link: "https://leetcode.com/problems/search-in-rotated-sorted-array/",
         Notes: "at most two sorted halfs, mid will be apart of left sorted or right sorted, if target is in range of sorted portion then search it, otherwise search other half",
     },
+
+    /* 9 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee98",
         VideoLink: "https://youtu.be/jzZsG8n2R9A",
         Category: "Arrays",
         Name: "3Sum",
         Link: "https://leetcode.com/problems/3sum/",
         Notes: "sort input, for each first element, find next two where -a = b+c, if a=prevA, skip a, if b=prevB skip b to elim duplicates; to find b,c use two pointers, left/right on remaining list;",
     },
+
+    /* 10 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee99",
         VideoLink: "https://youtu.be/UuiTKBwPgAo",
         Category: "Arrays",
         Name: "Container With Most Water",
         Link: "https://leetcode.com/problems/container-with-most-water/",
         Notes: "shrinking window, left/right initially at endpoints, shift the pointer with min height;",
     },
+
+    /* 11 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee9a",
         VideoLink: "https://youtu.be/gVUrDV4tZfY",
         Category: "Binary",
         Name: "Sum of Two Integers",
         Link: "https://leetcode.com/problems/sum-of-two-integers/",
         Notes: "add bit by bit, be mindful of carry, after adding, if carry is still 1, then add it as well;",
     },
+
+    /* 12 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee9b",
         VideoLink: "https://youtu.be/5Km3utixwZs",
         Category: "Binary",
         Name: "Number of 1 Bits",
         Link: "https://leetcode.com/problems/number-of-1-bits/",
         Notes: "modulo, and dividing n; mod and div are expensive, to divide use bit shift, instead of mod to get 1's place use bitwise & 1;",
     },
+
+    /* 13 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee9c",
         VideoLink: "https://youtu.be/RyBM56RIWrM",
         Category: "Binary",
         Name: "Counting Bits",
         Link: "https://leetcode.com/problems/counting-bits/",
         Notes: "write out result for num=16 to figure out pattern; res[i] = res[i - offset], where offset is the biggest power of 2 <= I;",
     },
+
+    /* 14 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee9d",
         VideoLink: "https://youtu.be/WnPLSRLSANE",
         Category: "Binary",
         Name: "Missing Number",
         Link: "https://leetcode.com/problems/missing-number/",
         Notes: "compute expected sum - real sum; xor n with each index and value;",
     },
+
+    /* 15 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee9e",
         VideoLink: "https://youtu.be/UcoN6UjAI64",
         Category: "Binary",
         Name: "Reverse Bits",
         Link: "https://leetcode.com/problems/reverse-bits/",
         Notes: "reverse each of 32 bits;",
     },
+
+    /* 16 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0ee9f",
         VideoLink: "https://youtu.be/Y0lT9Fck7qI",
         Category: "Dynamic Programming",
         Name: "Climbing Stairs",
         Link: "https://leetcode.com/problems/climbing-stairs/",
         Notes: "subproblem find (n-1) and (n-2), sum = n;",
     },
+
+    /* 17 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea0",
         VideoLink: "https://youtu.be/H9bfqozjoqs",
         Category: "Dynamic Programming",
         Name: "Coin Change",
         Link: "https://leetcode.com/problems/coin-change/",
         Notes: "top-down: recursive dfs, for amount, branch for each coin, cache to store prev coin_count for each amount; bottom-up: compute coins for amount = 1, up until n, using for each coin (amount - coin), cache prev values",
     },
+
+    /* 18 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea1",
         VideoLink: "https://youtu.be/cjWnW0hdF1Y",
         Category: "Dynamic Programming",
         Name: "Longest Increasing Subsequence",
         Link: "https://leetcode.com/problems/longest-increasing-subsequence/",
         Notes: "recursive: foreach num, get subseq with num and without num, only include num if prev was less, cache solution of each; dp=subseq length which must end with each num, curr num must be after a prev dp or by itself;",
     },
+
+    /* 19 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea2",
         VideoLink: "https://youtu.be/Ua0GhsJSlWM",
         Category: "Dynamic Programming",
         Name: "Longest Common Subsequence",
         Link: "https://leetcode.com/problems/longest-common-subsequence/",
         Notes: "recursive: if first chars are equal find lcs of remaining of each, else max of: lcs of first and remain of 2nd and lcs of 2nd remain of first, cache result; nested forloop to compute the cache without recursion;",
     },
+
+    /* 20 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea3",
         VideoLink: "https://youtu.be/Sx9NNgInc3A",
         Category: "Dynamic Programming",
         Name: "Word Break Problem",
         Link: "https://leetcode.com/problems/word-break/",
         Notes: "for each prefix, if prefix is in dict and wordbreak(remaining str)=True, then return True, cache result of wordbreak;",
     },
+
+    /* 21 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea4",
         VideoLink: "https://youtu.be/GBKI9VSKdGg",
         Category: "Dynamic Programming",
         Name: "Combination Sum",
         Link: "https://leetcode.com/problems/combination-sum/",
         Notes: "visualize the decision tree, base case is curSum = or > target, each candidate can have children of itself or elements to right of it inorder to elim duplicate solutions;",
     },
+
+    /* 22 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea5",
         VideoLink: "https://youtu.be/73r3KWiEvyk",
         Category: "Dynamic Programming",
         Name: "House Robber",
         Link: "https://leetcode.com/problems/house-robber/",
         Notes: "for each num, get max of prev subarr, or num + prev subarr not including last element, store results of prev, and prev not including last element",
     },
+
+    /* 23 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea6",
         VideoLink: "https://youtu.be/rWAJCfYYOvM",
         Category: "Dynamic Programming",
         Name: "House Robber II",
         Link: "https://leetcode.com/problems/house-robber-ii/",
         Notes: "subarr = arr without first & last, get max of subarr, then pick which of first/last should be added to it",
     },
+
+    /* 24 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea7",
         VideoLink: "https://youtu.be/6aEyTjOwlJU",
         Category: "Dynamic Programming",
         Name: "Decode Ways",
         Link: "https://leetcode.com/problems/decode-ways/",
         Notes: "can cur char be decoded in one or two ways? Recursion -> cache -> iterative dp solution, a lot of edge cases to determine, 52, 31, 29, 10, 20 only decoded one way, 11, 26 decoded two ways",
     },
+
+    /* 25 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea8",
         VideoLink: "https://youtu.be/IlEsdxuD4lY",
         Category: "Dynamic Programming",
         Name: "Unique Paths",
         Link: "https://leetcode.com/problems/unique-paths/",
-        Notes: "work backwards from solution, store paths for each position in grid, to further optimize, we don’t store whole grid, only need to store prev row;",
+        Notes: "work backwards from solution, store paths for each position in grid, to further optimize, we don't store whole grid, only need to store prev row;",
     },
+
+    /* 26 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eea9",
         VideoLink: "https://youtu.be/Yan0cv2cLy8",
         Category: "Dynamic Programming",
         Name: "Jump Game",
         Link: "https://leetcode.com/problems/jump-game/",
         Notes: "visualize the recursive tree, cache solution for O(n) time/mem complexity, iterative is O(1) mem, just iterate backwards to see if element can reach goal node, if yes, then set it equal to goal node, continue;",
     },
+
+    /* 27 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeaa",
         VideoLink: "https://youtu.be/mQeF6bN8hMk",
         Category: "Graph",
         Name: "Clone Graph",
         Link: "https://leetcode.com/problems/clone-graph/",
         Notes: "recursive dfs, hashmap for visited nodes",
     },
+
+    /* 28 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeab",
         VideoLink: "https://youtu.be/EgI5nU9etnU",
         Category: "Graph",
         Name: "Course Schedule",
         Link: "https://leetcode.com/problems/course-schedule/",
         Notes: "build adjacentcy_list with edges, run dfs on each V, if while dfs on V we see V again, then loop exists, otherwise V isnt in a loop, 3 states= not visited, visited, still visiting",
     },
+
+    /* 29 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeac",
         VideoLink: "https://youtu.be/s-VkcjHqkGI",
         Category: "Graph",
         Name: "Pacific Atlantic Water Flow",
         Link: "https://leetcode.com/problems/pacific-atlantic-water-flow/",
         Notes: "dfs each cell, keep track of visited, and track which reach pac, atl; dfs on cells adjacent to pac, atl, find overlap of cells that are visited by both pac and atl cells;",
     },
+
+    /* 30 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eead",
         VideoLink: "https://youtu.be/pV2kpPD66nE",
         Category: "Graph",
         Name: "Number of Islands",
         Link: "https://leetcode.com/problems/number-of-islands/",
         Notes: "foreach cell, if cell is 1 and unvisited run dfs, increment cound and marking each contigous 1 as visited",
     },
+
+    /* 31 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeae",
         VideoLink: "https://youtu.be/P6RZZMu_maU",
         Category: "Graph",
         Name: "Longest Consecutive Sequence",
         Link: "https://leetcode.com/problems/longest-consecutive-sequence/",
-        Notes: "use bruteforce and try to optimize, consider the max subseq containing each num; add each num to hashset, for each num if num-1 doesn’t exist, count the consecutive nums after num, ie num+1; there is also a union-find solution;",
+        Notes: "use bruteforce and try to optimize, consider the max subseq containing each num; add each num to hashset, for each num if num-1 doesn't exist, count the consecutive nums after num, ie num+1; there is also a union-find solution;",
     },
+
+    /* 32 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeaf",
         VideoLink: "https://youtu.be/6kTZYvNNyps",
         Category: "Graph",
         Name: "Alien Dictionary (Leetcode Premium)",
         Link: "https://leetcode.com/problems/alien-dictionary/",
         Notes: "chars of a word not in order, the words are in order, find adjacency list of each unique char by iterating through adjacent words and finding first chars that are different, run topsort on graph and do loop detection;",
     },
+
+    /* 33 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb0",
         VideoLink: "https://youtu.be/bXsUuownnoQ",
         Category: "Graph",
         Name: "Graph Valid Tree (Leetcode Premium)",
         Link: "https://leetcode.com/problems/graph-valid-tree/",
         Notes: "union find, if union return false, loop exists, at end size must equal n, or its not connected; dfs to get size and check for loop, since each edge is double, before dfs on neighbor of N, remove N from neighbor list of neighbor;",
     },
+
+    /* 34 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb1",
         VideoLink: "https://youtu.be/8f1XPm4WOUc",
         Category: "Graph",
         Name: "Number of Connected Components in an Undirected Graph (Leetcode Premium)",
         Link: "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
-        Notes: "dfs on each node that hasn’t been visited, increment component count, adjacency list; bfs and union find are possible;",
+        Notes: "dfs on each node that hasn't been visited, increment component count, adjacency list; bfs and union find are possible;",
     },
+
+    /* 35 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb2",
         VideoLink: "https://youtu.be/A8NUOmlwOlM",
         Category: "Interval",
         Name: "Insert Interval",
         Link: "https://leetcode.com/problems/insert-interval/",
         Notes: "insert new interval in order, then merge intervals; newinterval could only merge with one interval that comes before it, then add remaining intervals;",
     },
+
+    /* 36 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb3",
         VideoLink: "https://youtu.be/44H3cEC2fFM",
         Category: "Interval",
         Name: "Merge Intervals",
         Link: "https://leetcode.com/problems/merge-intervals/",
         Notes: "sort each interval, overlapping intervals should be adjacent, iterate and build solution; also graph method, less efficient, more complicated",
     },
+
+    /* 37 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb4",
         VideoLink: "https://youtu.be/nONCGxWoUfM",
         Category: "Interval",
         Name: "Non-overlapping Intervals",
         Link: "https://leetcode.com/problems/non-overlapping-intervals/",
         Notes: "instead of removing, count how max num of intervals you can include, sort intervals, dp to compute max intervals up until the i-th interval;",
     },
+
+    /* 38 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb5",
         VideoLink: "https://youtu.be/PaJxqZVPhbg",
         Category: "Interval",
         Name: "Meeting Rooms (Leetcode Premium)",
         Link: "https://leetcode.com/problems/meeting-rooms/",
-        Notes: "sort intervals by start time, if second interval doesn’t overlap with first, then third def wont overlap with first;",
+        Notes: "sort intervals by start time, if second interval doesn't overlap with first, then third def wont overlap with first;",
     },
+
+    /* 39 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb6",
         VideoLink: "https://youtu.be/FdzJmTCVyJU",
         Category: "Interval",
         Name: "Meeting Rooms II (Leetcode Premium)",
         Link: "https://leetcode.com/problems/meeting-rooms-ii/",
         Notes: "we care about the points in time where we are starting/ending a meeting, we already are given those, just separate start/end and traverse counting num of meetings going at these points in time; for each meeting check if a prev meeting has finished before curr started, using min heap;",
     },
+
+    /* 40 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb7",
         VideoLink: "https://youtu.be/G0_I-ZF0S38",
         Category: "Linked List",
         Name: "Reverse a Linked List",
         Link: "https://leetcode.com/problems/reverse-linked-list/",
         Notes: "iterate through maintaining cur and prev; recursively reverse, return new head of list",
     },
+
+    /* 41 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb8",
         VideoLink: "https://youtu.be/gBTe7lFR3vc",
         Category: "Linked List",
         Name: "Detect Cycle in a Linked List",
         Link: "https://leetcode.com/problems/linked-list-cycle/",
         Notes: "dict to remember visited nodes; two pointers at different speeds, if they meet there is loop",
     },
+
+    /* 42 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeb9",
         VideoLink: "https://youtu.be/XIdigk956u0",
         Category: "Linked List",
         Name: "Merge Two Sorted Lists",
         Link: "https://leetcode.com/problems/merge-two-sorted-lists/",
         Notes: "insert each node from one list into the other",
     },
+
+    /* 43 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeba",
         VideoLink: "https://youtu.be/q5a5OiGbT6Q",
         Category: "Linked List",
         Name: "Merge K Sorted Lists",
         Link: "https://leetcode.com/problems/merge-k-sorted-lists/",
         Notes: "divied and conquer, merge lists, N totalnodes, k-lists, O(N*logk). For each list, find min val, insert it into list, use priorityQ to optimize finding min O(N*logk)",
     },
+
+    /* 44 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eebb",
         VideoLink: "https://youtu.be/XVuQxVej6y8",
         Category: "Linked List",
         Name: "Remove Nth Node From End Of List",
         Link: "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
         Notes: "use dummy node at head of list, compute len of list; two pointers, second has offset of n from first;",
     },
+
+    /* 45 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eebc",
         VideoLink: "https://youtu.be/S5bfdUTrKLM",
         Category: "Linked List",
         Name: "Reorder List",
         Link: "https://leetcode.com/problems/reorder-list/",
         Notes: "reverse second half of list, then easily reorder it; non-optimal way is to store list in array;",
     },
+
+    /* 46 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eebd",
         VideoLink: "https://youtu.be/T41rL0L3Pnw",
         Category: "Matrix",
         Name: "Set Matrix Zeroes",
         Link: "https://leetcode.com/problems/set-matrix-zeroes/",
         Notes: "use sets to keep track of all rows, cols to zero out, after, for each num if it is in a zero row or col then change it to 0; flag first cell in row, and col to mark row/col that needs to be zeroed;",
     },
+
+    /* 47 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eebe",
         VideoLink: "https://youtu.be/BJnMZNwUk1M",
         Category: "Matrix",
         Name: "Spiral Matrix",
         Link: "https://leetcode.com/problems/spiral-matrix/",
         Notes: "keep track of visited cells; keep track of boundaries, layer-by-layer;",
     },
+
+    /* 48 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eebf",
         VideoLink: "https://youtu.be/fMSJSS7eO1w",
         Category: "Matrix",
         Name: "Rotate Image",
         Link: "https://leetcode.com/problems/rotate-image/",
         Notes: "rotate layer-by-layer, use that it's a square as advantage, rotate positions in reverse order, store a in temp, a = b, b = c, c = d, d = temp;",
     },
+
+    /* 49 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec0",
         VideoLink: "https://youtu.be/pfiQ_PS1g8E",
         Category: "Matrix",
         Name: "Word Search",
         Link: "https://leetcode.com/problems/word-search/",
         Notes: "dfs on each cell, for each search remember visited cells, and remove cur visited cell right before you return from dfs;",
     },
+
+    /* 50 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec1",
         VideoLink: "https://youtu.be/wiGpQwVHdE0",
         Category: "String",
         Name: "Longest Substring Without Repeating Characters",
         Link: "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
         Notes: "sliding window, if we see same char twice within curr window, shift start position;",
     },
+
+    /* 51 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec2",
         VideoLink: "https://youtu.be/gqXU1UyA8pk",
         Category: "String",
         Name: "Longest Repeating Character Replacement",
         Link: "https://leetcode.com/problems/longest-repeating-character-replacement/",
         Notes: "PAY ATTENTION: limited to chars A-Z; for each capital char, check if it could create the longest repeating substr, use sliding window to optimize; check if windowlen=1 works, if yes, increment len, if not, shift window right;",
     },
+
+    /* 52 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec3",
         VideoLink: "https://youtu.be/jSto0O4AJbM",
         Category: "String",
         Name: "Minimum Window Substring",
         Link: "https://leetcode.com/problems/minimum-window-substring/",
         Notes: "need is num of unique char in T, HAVE is num of char we have valid count for, sliding window, move right until valid, if valid, increment left until invalid, to check validity keep track if the count of each unique char is satisfied;",
     },
+
+    /* 53 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec4",
         VideoLink: "https://youtu.be/9UtInBqnCgA",
         Category: "String",
         Name: "Valid Anagram",
         Link: "https://leetcode.com/problems/valid-anagram/",
         Notes: "hashmap to count each char in str1, decrement for str2;",
     },
+
+    /* 54 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec5",
         VideoLink: "https://youtu.be/vzdNOK2oB2E",
         Category: "String",
         Name: "Group Anagrams",
         Link: "https://leetcode.com/problems/group-anagrams/",
         Notes: "for each of 26 chars, use count of each char in each word as tuple for key in dict, value is the list of anagrams;",
     },
+
+    /* 55 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec6",
         VideoLink: "https://youtu.be/WTzjTskDFMg",
         Category: "String",
         Name: "Valid Parentheses",
         Link: "https://leetcode.com/problems/valid-parentheses/",
         Notes: "push opening brace on stack, pop if matching close brace, at end if stack empty, return true;",
     },
+
+    /* 56 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec7",
         VideoLink: "https://youtu.be/jJXJ16kPFWg",
         Category: "String",
         Name: "Valid Palindrome",
         Link: "https://leetcode.com/problems/valid-palindrome/",
-        Notes: "left, right pointers, update left and right until each points at alphanum, compare left and right, continue until left >= right, don’t distinguish between upper/lowercase;",
+        Notes: "left, right pointers, update left and right until each points at alphanum, compare left and right, continue until left >= right, don't distinguish between upper/lowercase;",
     },
+
+    /* 57 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec8",
         VideoLink: "https://youtu.be/XYQecbcd6_c",
         Category: "String",
         Name: "Longest Palindromic Substring",
         Link: "https://leetcode.com/problems/longest-palindromic-substring/",
         Notes: "foreach char in str, consider it were the middle, consider if pali was odd or even;",
     },
+
+    /* 58 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eec9",
         VideoLink: "https://youtu.be/4RACzI5-du8",
         Category: "String",
         Name: "Palindromic Substrings",
         Link: "https://leetcode.com/problems/palindromic-substrings/",
         Notes: "same as longest palindromic string, each char in str as middle and expand outwards, do same for pali of even len; maybe read up on manachers alg",
     },
+
+    /* 59 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeca",
         VideoLink: "https://youtu.be/B1k_sxOSgv8",
         Category: "String",
         Name: "Encode and Decode Strings (Leetcode Premium)",
         Link: "https://leetcode.com/problems/encode-and-decode-strings/",
         Notes: "store length of str before each string and delimiter like '#';",
     },
+
+    /* 60 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eecb",
         VideoLink: "https://youtu.be/hTM3phVI6YQ",
         Category: "Tree",
         Name: "Maximum Depth of Binary Tree",
         Link: "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
         Notes: "recursive dfs to find max-depth of subtrees; iterative bfs to count number of levels in tree",
     },
+
+    /* 61 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eecc",
         VideoLink: "https://youtu.be/vRbbcKXCxOw",
         Category: "Tree",
         Name: "Same Tree",
         Link: "https://leetcode.com/problems/same-tree/",
         Notes: "recursive dfs on both trees at the same time; iterative bfs compare each level of both trees",
     },
+
+    /* 62 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eecd",
         VideoLink: "https://youtu.be/OnSn2XEQ4MY",
         Category: "Tree",
         Name: "Invert/Flip Binary Tree",
         Link: "https://leetcode.com/problems/invert-binary-tree/",
         Notes: "recursive dfs to invert subtrees; bfs to invert levels, use collections.deque; iterative dfs is easy with stack if doing pre-order traversal",
     },
+
+    /* 63 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eece",
         VideoLink: "https://youtu.be/Hr5cWUld4vU",
         Category: "Tree",
         Name: "Binary Tree Maximum Path Sum",
         Link: "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
         Notes: "helper returns maxpathsum without splitting branches, inside helper we also update maxSum by computing maxpathsum WITH a split;",
     },
+
+    /* 64 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eecf",
         VideoLink: "https://youtu.be/6ZnyEApgFYg",
         Category: "Tree",
         Name: "Binary Tree Level Order Traversal",
         Link: "https://leetcode.com/problems/binary-tree-level-order-traversal/",
         Notes: "iterative bfs, add prev level which doesn't have any nulls to the result;",
     },
+
+    /* 65 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed0",
         VideoLink: "https://youtu.be/u4JAi2JJhI8",
         Category: "Tree",
         Name: "Serialize and Deserialize Binary Tree",
         Link: "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
         Notes: "bfs every single non-null node is added to string, and it's children are added too, even if they're null, deserialize by adding each non-null node to queue, deque node, it's children are next two nodes in string;",
     },
+
+    /* 66 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed1",
         VideoLink: "https://youtu.be/E36O5SWp-LE",
         Category: "Tree",
         Name: "Subtree of Another Tree",
         Link: "https://leetcode.com/problems/subtree-of-another-tree/",
         Notes: "traverse s to check if any subtree in s equals t; merkle hashing?",
     },
+
+    /* 67 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed2",
         VideoLink: "https://youtu.be/ihj4IQGZ2zc",
         Category: "Tree",
         Name: "Construct Binary Tree from Preorder and Inorder Traversal",
         Link: "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
         Notes: "first element in pre-order is root, elements left of root in in-order are left subtree, right of root are right subtree, recursively build subtrees;",
     },
+
+    /* 68 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed3",
         VideoLink: "https://youtu.be/s6ATEkipzow",
         Category: "Tree",
         Name: "Validate Binary Search Tree",
         Link: "https://leetcode.com/problems/validate-binary-search-tree/",
         Notes: 'trick is use built in python min/max values float("inf"), "-inf", as parameters; iterative in-order traversal, check each val is greater than prev;',
     },
+
+    /* 69 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed4",
         VideoLink: "https://youtu.be/5LUXSvjmGCw",
         Category: "Tree",
         Name: "Kth Smallest Element in a BST",
         Link: "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
         Notes: "non-optimal store tree in sorted array; iterative dfs in-order and return the kth element processed, go left until null, pop, go right once;",
     },
+
+    /* 70 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed5",
         VideoLink: "https://youtu.be/gs2LMfuOR9k",
         Category: "Tree",
         Name: "Lowest Common Ancestor of BST",
         Link: "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
         Notes: "compare p, q values to curr node, base case: one is in left, other in right subtree, then curr is lca;",
     },
+
+    /* 71 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed6",
         VideoLink: "https://youtu.be/oobqoCJlHA0",
         Category: "Tree",
         Name: "Implement Trie (Prefix Tree)",
         Link: "https://leetcode.com/problems/implement-trie-prefix-tree/",
-        Notes: "node has children characters, and bool if its an ending character, node DOESN’T have or need char, since root node doesn’t have a char, only children;",
+        Notes: "node has children characters, and bool if its an ending character, node DOESN'T have or need char, since root node doesn't have a char, only children;",
     },
+
+    /* 72 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed7",
         VideoLink: "https://youtu.be/BTf05gs_8iU",
         Category: "Tree",
         Name: "Add and Search Word",
         Link: "https://leetcode.com/problems/add-and-search-word-data-structure-design/",
         Notes: 'if char = "." run search for remaining portion of word on all of curr nodes children;',
     },
+
+    /* 73 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed8",
         VideoLink: "https://youtu.be/asbcE9mZz_U",
         Category: "Tree",
         Name: "Word Search II",
         Link: "https://leetcode.com/problems/word-search-ii/",
-        Notes: "trick: I though use trie to store the grid, reverse thinking, instead store dictionary words, dfs on each cell, check if cell's char exists as child of root node in trie, if it does, update currNode, and check neighbors, a word could exist multiple times in grid, so don’t add duplicates;",
+        Notes: "trick: I though use trie to store the grid, reverse thinking, instead store dictionary words, dfs on each cell, check if cell's char exists as child of root node in trie, if it does, update currNode, and check neighbors, a word could exist multiple times in grid, so don't add duplicates;",
     },
+
+    /* 74 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eed9",
         VideoLink: "https://youtu.be/q5a5OiGbT6Q",
         Category: "Heap",
         Name: "Merge K Sorted Lists",
         Link: "https://leetcode.com/problems/merge-k-sorted-lists/",
         Notes: "we always want the min of the current frontier, we can store frontier in heap of size k for efficient pop/push; divide and conquer merging lists;",
     },
+
+    /* 75 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eeda",
         VideoLink: "https://youtu.be/YPTqKIgVk-k",
         Category: "Heap",
         Name: "Top K Frequent Elements",
         Link: "https://leetcode.com/problems/top-k-frequent-elements/",
-        Notes: "minheap that’s kept at size k, if its bigger than k pop the min, by the end it should be left with k largest;",
+        Notes: "minheap that's kept at size k, if its bigger than k pop the min, by the end it should be left with k largest;",
     },
+
+    /* 76 createdAt:1/7/2022, 10:18:09 AM*/
     {
+        _id: "61d7c609ae9c5421e4d0eedb",
         VideoLink: "https://youtu.be/itmhHWaHupI",
         Category: "Heap",
         Name: "Find Median from Data Stream",

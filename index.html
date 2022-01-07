@@ -1,46 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="tailwindcss.js"></script>
-        <title>Document</title>
-    </head>
-    <body class="h-screen overflow-hidden">
-        <template id="table-row">
-            <tr>
-                <td class="p-4 border-t-2 border-gray-400 text-center" id="index"></td>
-                <td class="p-4 border-t-2 border-gray-400 text-center text-blue-700" id="link"></td>
-                <td
-                    class="p-4 border-t-2 border-gray-400 text-center text-blue-700"
-                    id="video-link"
-                ></td>
-                <td class="p-4 border-t-2 border-gray-400 text-justify max-w-[45ch]" id="name"></td>
-                <td class="p-4 border-t-2 border-gray-400 text-justify" id="category"></td>
-                <td
-                    class="p-4 border-t-2 min-w-[40ch] max-w-[45ch] border-gray-400 text-justify"
-                    id="note"
-                ></td>
-            </tr>
-        </template>
-        <div class="px">
-            <div class="overflow-scroll h-screen">
-                <table class="mx-auto">
-                    <thead class="sticky top-0 bg-white border-b-2">
-                        <th>#</th>
-                        <th class="p-4 text-justify">Link</th>
-                        <th class="p-4 text-justify">Video Link</th>
-                        <th class="p-4 text-justify">Name</th>
-                        <th class="p-4 text-justify">Category</th>
-                        <th class="p-4 text-justify">note</th>
-                    </thead>
-                    <tbody id="table-body"></tbody>
-                </table>
-            </div>
-        </div>
-
-        <script src="blind75.js"></script>
-        <script src="script.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/static/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
